@@ -1,0 +1,15 @@
+<div class="app-container">
+  <div class="container">
+    <div class="col-33"></div>
+    <div class="col-33">
+      <h1>Multi Select with UnSelect Feature</h1>
+      <form [formGroup]="myForm">
+        <ng-multiselect-dropdown name="city" [placeholder]="'Select City'" [data]="cities" formControlName="city"
+          [disabled]="disabled" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
+          (onSelectAll)="onSelectAll($event)">
+        </ng-multiselect-dropdown>
+      </form>
+    </div>
+    <div class="col-33"></div>
+  </div>
+</div>
